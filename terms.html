@@ -17,6 +17,7 @@
     }
     * {
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
     body {
       margin: 0;
@@ -26,282 +27,178 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      padding-bottom: 5rem;
     }
     header {
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      background: var(--primary-color);
       color: white;
-      padding: 3rem 1rem 4rem 1rem;
       text-align: center;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      padding: 2rem 1rem;
     }
     header h1 {
       margin: 0;
       font-family: var(--heading-font);
-      font-size: 3rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+      font-size: 2.5rem;
     }
     main {
-      max-width: 900px;
-      margin: 3rem auto 4rem auto;
-      padding: 0 1.5rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(38, 84, 57, 0.15);
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.2rem;
     }
     h2 {
       font-family: var(--heading-font);
       font-size: 2rem;
       color: var(--primary-color);
-      margin-top: 2.5rem;
-      margin-bottom: 1.25rem;
-      letter-spacing: 0.1em;
-      border-bottom: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
       padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--accent-color);
     }
     h3 {
       color: var(--secondary-color);
-      margin-top: 1.8rem;
       margin-bottom: 1rem;
       font-weight: 700;
     }
     p {
-      margin-bottom: 1.2rem;
-      font-size: 1.125rem;
-      color: var(--text-color);
       text-align: justify;
-      line-height: 1.65;
-    }
-    ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: #3a5940;
-      font-size: 1.1rem;
-      line-height: 1.55;
-      list-style-type: disc;
-    }
-    ul li {
-      margin-bottom: 0.8rem;
+      margin-bottom: 1.2rem;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #234933;
     }
     footer {
       background: var(--primary-color);
       color: white;
-      padding: 1.8rem 1rem 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
       font-size: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.28);
+      box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.25);
       letter-spacing: 0.05em;
     }
     footer address {
       font-style: normal;
-      margin-bottom: 0.35rem;
+      margin-bottom: 1rem;
       line-height: 1.6;
       font-weight: 600;
       font-size: 1.05rem;
     }
     footer a {
+      text-decoration: none;
       color: #ade5be;
       font-weight: 700;
-      text-decoration: none;
       transition: color 0.3s ease;
     }
     footer a:hover,
     footer a:focus {
       color: #d0fff3;
       outline: none;
-      text-decoration: underline;
     }
-    /* Footer icons inline */
-    footer address::before {
-      content: "\1F4CD";
-      margin-right: 6px;
-      font-size: 1.1rem;
-      vertical-align: middle;
-    }
-    footer address a::before {
-      content: "\260E";
-      margin-right: 8px;
-      font-size: 1.2rem;
-      vertical-align: middle;
-      color: #ade5be;
-      transition: color 0.3s ease;
-    }
-    footer address a:hover::before,
-    footer address a:focus::before {
-      color: #d0fff3;
-      outline: none;
-    }
-    /* Responsive */
-    @media screen and (max-width: 720px) {
-      header h1 {
-        font-size: 2.2rem;
-        letter-spacing: 0.1em;
-      }
-      main {
-        margin: 2rem 1rem 4rem 1rem;
-        border-radius: 8px;
-      }
-      h2 {
-        font-size: 1.6rem;
-      }
-      p, ul {
-        font-size: 1rem;
-      }
-      footer {
-        font-size: 0.9rem;
-        padding: 1.2rem 0.8rem 2rem 0.8rem;
-      }
-      footer address {
-        font-size: 0.95rem;
-      }
+    footer p {
+      opacity: 0.84;
+      margin: 0;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header role="banner">
-    <h1>Terms and Conditions</h1>
+  <header>
+    <h1>BlueRoot Garden Irrigation</h1>
   </header>
-  <main role="main">
-    <section aria-labelledby="introduction">
-      <h2 id="introduction">Introduction</h2>
-      <p>
-        These Terms and Conditions (“Terms”) govern your access and use of BlueRoot Garden Irrigation’s website, services, and any related products. By accessing or using our website or services, you agree to be bound by these Terms. Please read them carefully before using our offerings. If you do not agree to these Terms, please refrain from using our services.
-      </p>
-      <p>
-        BlueRoot Garden Irrigation (“BlueRoot”, “we”, “our”, or “us”) reserves the right to update or modify these Terms at any time without prior notice. Continued use of the website or services after such changes constitutes acceptance of the revised Terms.
-      </p>
-    </section>
-    <section aria-labelledby="services">
-      <h2 id="services">Services</h2>
-      <p>
-        BlueRoot provides professional garden irrigation system design, installation, maintenance, and consulting services (“Services”) as described on our website and related materials. We strive to ensure the quality and reliability of our Services; however, certain conditions and limitations apply as outlined in these Terms.
-      </p>
-      <p>
-        All services are subject to availability and any applicable local regulations. We reserve the right to refuse service or terminate contracts that violate our policies or legal requirements.
-      </p>
-    </section>
-    <section aria-labelledby="service-agreements">
-      <h2 id="service-agreements">Service Agreements</h2>
-      <p>
-        When you engage BlueRoot for Services, a formal agreement or contract (“Agreement”) will be provided outlining the scope, pricing, and terms of service. It is your responsibility to review and agree to the terms before work begins.
-      </p>
-      <p>
-        Any modifications or additions to the Agreement must be agreed upon in writing by both parties. BlueRoot is not responsible for delays or additional costs caused by changes requested mid-project or factors outside our control.
-      </p>
-    </section>
-    <section aria-labelledby="pricing-and-payment">
-      <h2 id="pricing-and-payment">Pricing and Payment</h2>
-      <p>
-        Prices listed on our website are estimates and may vary based on your specific project requirements, site inspection results, and material costs. Final pricing will be outlined in your Service Agreement.
-      </p>
-      <p>
-        Payment terms, including deposits, milestones, or full payment requirements, will be specified in the Agreement. Timely payment is essential to avoid service interruptions or contract termination.
-      </p>
-      <p>
-        We accept payments via approved methods as outlined during the engagement process. Failure to fulfill payment obligations may result in legal actions or additional fees.
-      </p>
-    </section>
-    <section aria-labelledby="customer-responsibilities">
-      <h2 id="customer-responsibilities">Customer Responsibilities</h2>
-      <p>
-        To ensure successful completion of Services, customers agree to:
-      </p>
-      <ul>
-        <li>Provide accurate and complete information regarding property, site conditions, and irrigation requirements.</li>
-        <li>Ensure safe and reasonable access to the property for our technicians during scheduled service times.</li>
-        <li>Comply with all necessary local permits, approvals, or regulations applicable to irrigation systems.</li>
-        <li>Promptly notify BlueRoot of any changes or issues that may affect the scope of work.</li>
-        <li>Make timely payments according to agreed terms.</li>
-      </ul>
-    </section>
-    <section aria-labelledby="warranties-and-liabilities">
-      <h2 id="warranties-and-liabilities">Warranties and Liabilities</h2>
-      <p>
-        BlueRoot warrants that all services will be provided with reasonable skill and care consistent with industry standards.
-      </p>
-      <p>
-        We provide limited warranties on materials and workmanship as specified in your Service Agreement or product documentation.
-      </p>
-      <p>
-        However, BlueRoot is not liable for:
-      </p>
-      <ul>
-        <li>Damage caused by natural disasters, weather extremes, or unauthorized system modifications.</li>
-        <li>Indirect, incidental, special, or consequential damages arising from use or inability to use services or products.</li>
-        <li>Failures due to customer negligence or violation of maintenance requirements.</li>
-      </ul>
-      <p>
-        Our total liability under these Terms shall not exceed the amount you have paid for our services.
-      </p>
-    </section>
-    <section aria-labelledby="third-party-products">
-      <h2 id="third-party-products">Third-Party Products and Links</h2>
-      <p>
-        BlueRoot may use or recommend third-party products and equipment for irrigation systems. We do not manufacture these products and are not responsible for their defects or warranties.
-      </p>
-      <p>
-        Our website may contain links to third-party sites for your convenience. We do not control these sites and are not responsible for their content or privacy practices.
-      </p>
-    </section>
-    <section aria-labelledby="intellectual-property">
-      <h2 id="intellectual-property">Intellectual Property</h2>
-      <p>
-        All content, trademarks, logos, and materials on our website are the intellectual property of BlueRoot Garden Irrigation or its licensors.
-      </p>
-      <p>
-        Unauthorized use, reproduction, or distribution of our intellectual property is prohibited without prior written consent.
-      </p>
-    </section>
-    <section aria-labelledby="termination">
-      <h2 id="termination">Termination</h2>
-      <p>
-        We reserve the right to suspend or terminate your access to our services or website upon breach of these Terms, non-payment, or conduct deemed harmful to BlueRoot or its customers.
-      </p>
-      <p>
-        Upon termination, outstanding payments become immediately due, and any licenses or permissions granted to you are revoked.
-      </p>
-    </section>
-    <section aria-labelledby="governing-law">
-      <h2 id="governing-law">Governing Law and Dispute Resolution</h2>
-      <p>
-        These Terms shall be governed by and construed in accordance with the laws of the state in which BlueRoot operates, without regard to conflict of law principles.
-      </p>
-      <p>
-        In the event of disputes, both parties agree to negotiate in good faith or pursue mediation before resorting to litigation.
-      </p>
-    </section>
-    <section aria-labelledby="miscellaneous">
-      <h2 id="miscellaneous">Miscellaneous</h2>
-      <p>
-        If any provision of these Terms is found invalid or unenforceable, the remaining provisions remain in full force and effect.
-      </p>
-      <p>
-        These Terms constitute the entire agreement between you and BlueRoot concerning the use of our website and services, superseding any prior agreements.
-      </p>
-    </section>
-    <section aria-labelledby="contact-information">
-      <h2 id="contact-information">Contact Information</h2>
-      <p>
-        For any questions or concerns related to these Terms and Conditions, please contact us at:
-      </p>
-      <address>
-        BlueRoot Garden Irrigation<br />
-        1234 Greenway Drive,<br />
-        Pleasantville, CA 90210<br />
-        Phone: <a href="tel:+12345678900">(123) 456-7890</a><br />
-        Email: <a href="mailto:info@bluerootirrigation.com">info@bluerootirrigation.com</a>
-      </address>
-      <p>
-        We strive to respond promptly and ensure your satisfaction.
-      </p>
-    </section>
+  <main>
+    <h2>Terms and Conditions</h2>
+    <p>
+      Welcome to BlueRoot Garden Irrigation! These Terms and Conditions outline the rules and regulations for the use of our services and website. By accessing or using our services, you agree to comply with these terms. If you do not agree with any part of these terms, you must not use our services.
+    </p>
+
+    <h3>1. Definitions</h3>
+    <p>
+      In these Terms and Conditions, the following terms shall have the following meanings:
+    </p>
+    <ul>
+      <li><strong>"Company"</strong> refers to BlueRoot Garden Irrigation.</li>
+      <li><strong>"Services"</strong> refers to all services provided by the Company, including but not limited to irrigation system design, installation, maintenance, and consulting.</li>
+      <li><strong>"User "</strong> refers to any individual or entity that accesses or uses the Company's services.</li>
+      <li><strong>"Website"</strong> refers to the BlueRoot Garden Irrigation website located at [insert website URL].</li>
+    </ul>
+
+    <h3>2. Acceptance of Terms</h3>
+    <p>
+      By using our services, you confirm that you are at least 18 years old and have the legal capacity to enter into these Terms and Conditions. If you are using our services on behalf of an organization, you represent that you have the authority to bind that organization to these terms.
+    </p>
+
+    <h3>3. Services Provided</h3>
+    <p>
+      BlueRoot Garden Irrigation offers a range of services, including but not limited to:
+    </p>
+    <ul>
+      <li>Custom irrigation design</li>
+      <li>Sprinkler system installation</li>
+      <li>Drip irrigation setup</li>
+      <li>Smart irrigation controllers and automation</li>
+      <li>Maintenance and repair services</li>
+      <li>Water audit and consulting</li>
+    </ul>
+    <p>
+      The Company reserves the right to modify or discontinue any service at any time without prior notice.
+    </p>
+
+    <h3>4. Pricing and Payment</h3>
+    <p>
+      All prices for services are subject to change without notice. The Company will provide a detailed quote for services before any work begins. Payment is due upon completion of the services unless otherwise agreed upon in writing. We accept various payment methods, including credit cards, debit cards, and electronic transfers.
+    </p>
+
+    <h3>5. User Responsibilities</h3>
+    <p>
+      As a user of our services, you agree to:
+    </p>
+    <ul>
+      <li>Provide accurate and complete information when requesting services.</li>
+      <li>Ensure that you have the necessary permissions for any property where services are to be performed.</li>
+      <li>Comply with all applicable laws and regulations while using our services.</li>
+      <li>Not engage in any conduct that may harm the Company or its reputation.</li>
+    </ul>
+
+    <h3>6. Limitation of Liability</h3>
+    <p>
+      To the fullest extent permitted by law, BlueRoot Garden Irrigation shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our services. Our total liability to you for any claims arising from these terms or your use of our services shall not exceed the amount paid by you for the services in question.
+    </p>
+
+    <h3>7. Indemnification</h3>
+    <p>
+      You agree to indemnify, defend, and hold harmless BlueRoot Garden Irrigation, its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising out of or related to your use of our services or your violation of these Terms and Conditions.
+    </p>
+
+    <h3>8. Intellectual Property</h3>
+    <p>
+      All content on the Website, including text, graphics, logos, and images, is the property of BlueRoot Garden Irrigation or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.
+    </p>
+
+    <h3>9. Third-Party Links</h3>
+    <p>
+      Our Website may contain links to third-party websites. These links are provided for your convenience and do not signify our endorsement of such websites. We have no control over the content or practices of these websites and are not responsible for their privacy policies or terms of service.
+    </p>
+
+    <h3>10. Governing Law</h3>
+    <p>
+      These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law principles. Any disputes arising out of or related to these terms shall be resolved in the state or federal courts located in [insert county], California.
+    </p>
+
+    <h3>11. Changes to Terms</h3>
+    <p>
+      BlueRoot Garden Irrigation reserves the right to modify these Terms and Conditions at any time. We will notify you of any changes by posting the new terms on our Website. Your continued use of our services after any changes constitutes your acceptance of the new terms.
+    </p>
+
+    <h3>12. Contact Information</h3>
+    <p>
+      If you have any questions about these Terms and Conditions, please contact us at:
+    </p>
+    <address>
+      BlueRoot Garden Irrigation<br />
+      1234 Greenway Drive,<br />
+      Pleasantville, CA 90210<br />
+      Phone: <a href="tel:+12345678900">(123) 456-7890</a>
+    </address>
   </main>
-  <footer id="contact" role="contentinfo" aria-label="Contact information">
+
+  <footer>
     <address>
       BlueRoot Garden Irrigation<br />
       1234 Greenway Drive,<br />
